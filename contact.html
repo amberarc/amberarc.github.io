@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us</title>
+	 <link href="https://fonts.googleapis.com/css?family=Kavivanar|Open+Sans" rel="stylesheet"> 
+	 <link href="css/styles.css" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Fruktur|Gloria+Hallelujah" rel="stylesheet">  
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<header>
+				<div class="leftheader">
+						<a href="index.html"><img src="images/saucer_alien.png" alt="Alien Space Builder Logo. Click for home."></a>
+					</div>
+
+
+						<div class="rightheader">
+				<h1>Alien Space Builders</h1>
+				<h2>...building beautiful spaces in a galaxy near you!</h2>
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="team.html">Our Team</a></li>
+				<li><a href="locations.html">Locations</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<section>
+			<article class="welcome">
+				
+					<h1>Please contact us for more information:</h1>
+					<p>Fill out the form below and one of our qualified salesaliens will contact you with lightspeed:</p>
+					<form  action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
+
+						
+						<input type="hidden"  name="send_to" value="annah@amberarc.com">
+					  <fieldset>
+					<legend>Your contact information</legend>
+					<label for="fullname">Your name </label> <input type="text" id="fullname" name="name">
+					<label for="phone">Phone number</label>
+					<input type="tel" id="phone" name="phone" placeholder="Don't forget your area code">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email">
+					  </fieldset>
+		
+					 <fieldset> 
+					 <legend>About your project: </legend>
+					<label for="date">What is your desired move in date:</label>
+					<input type="date" id="date" name="date">
+					<label for="qty">How many people do you expect will occupy your new space in space?</label>
+					<input type="number" id="qty" name="qty" min="1" max="1000000000">
+					
+						
+					
+					
+					<p>If residential, what type of home do you prefer?</p>
+					<label>
+					<input type="radio" name="hometype" value="colonial">
+							Colonial
+					</label>
+
+					<label>
+					<input type="radio" name="hometype" value="ranch" >
+							Ranch
+					</label>
+
+					<label>
+					<input type="radio" name="hometype" value="capecod">		
+							Cape Cod
+					</label>
+
+					<label>
+					<input type="radio" name="hometype" value="cottage">		
+							Cottage
+					</label>		
+						
+					<label for="location">What location are you interested in?</label>
+						<select id="location" name="location">
+							<option selected>Select One</option>
+							<option value="mercury">Mercury Meadows</option>
+							<option value="venus">Venus Vineyards</option>
+							<option value="mars">Mars Marsh</option>
+							<option value="jupiter">Jupiter Junipers</option>
+							<option value="saturn">Saturn Suburbs</option>
+							<option value="uranus">Uranus Urban</option>
+							<option value="neptune">Neptune Nest</option>
+							<option value="pluto">Pluto Purlieu</option>
+						</select>
+					</label>
+
+					<label for="acttype">What type of activity is most important to you?</label>
+						<select id="acttype" name="acttype">
+							<option selected>Select One</option>
+							<option value="hiking">Hiking</option>
+							<option value="dancing">Dancing</option>
+							<option value="travel">Intergalatic Travel</option>
+							<option value="entertainment">Entertainment</option>
+							<option value="racing">Flying Saucer Racing</option>
+							<option value="hopping">Planet Hopping</option>
+						</select>
+					
+					<p>Additional information about your proejcts</p>
+					<label for="comments">
+					<textarea id="comments" name="comments" placeholder="Tell us everything...."></textarea>
+					</label>
+					<label>
+					<input type="checkbox" value="subscribe" name="subscribe" id="subscribe" checked>Add me to your email list!
+					</label>
+					 </fieldset>	
+				<button type="submit">Let's start talking about my new home or office!</button>
+		
+					</form>	
+				
+				</section>
+				<section class="address">	
+				
+					<article class="address1">
+					<h3>Our Local Location</h3>
+					<img src="images/transportation_modes.png">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9801625192536!2d-73.97605868386991!3d40.76246104246241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fa601ff11f%3A0x60a054da05023e9a!2s725+5th+Ave%2C+New+York%2C+NY+10022!5e0!3m2!1sen!2sus!4v1541422899739" width="600" height="450" frameborder="0" style="border:3px solid #481662" allowfullscreen></iframe>
+					<address>
+						Trump Tower&middot;
+						c/o Alien Space Builders &middot;
+                        725 5th Avenue &middot;
+						Suite 21&middot;
+						New York City, NY 10022
+					</address>
+					</article>
+				</section>	
+		<footer>
+			<p class="copyright">(&copy; 2604 - Present) website designed by jamarcus</p>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="team.html">Our Team</a></li>
+				<li><a href="locations.html">Locations</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+					</footer>
+	</div>
+	<script src="../js/forms.js"></script>	
+</body>
+</html>
